@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="TapIt_.Game"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TapIt_"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Loaded="Page_Loaded"
+    Name="page">
+
+    <Grid Background="#FF00394F" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0"  Text="Score="  FontSize="30" HorizontalAlignment="Right" Foreground="#FFAB1A25" FontWeight="Bold"/>
+        <TextBlock Grid.Row="0" Grid.Column="2" Name="lives" Text="Lives=3" FontSize="30" HorizontalAlignment="Left" Foreground="#FFAB1A25" FontWeight="Bold"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Name="score" HorizontalAlignment="Left" FontSize="30" Text="0" Foreground="#FFAB1A25" FontWeight="Bold"/>
+        <Button Grid.Row="1" Grid.Column="0" Name="nw"  Click="nw_Click" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Height="100" Background="Gray"/>
+        <Button Grid.Row="1" Grid.Column="1" Name="n" Click="n_Click" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="100" Height="100" Background="Gray"/>
+        <Button Grid.Row="1" Grid.Column="2" Name="ne" Click="ne_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="100" Height="100" Background="Gray"/>
+        <Button Grid.Row="2" Grid.Column="0"  Name="wc" Click="wc_Click" HorizontalAlignment="Right" VerticalAlignment="Center" Width="100" Height="100" Background="Gray"/>
+        <Button Grid.Row="2" Grid.Column="1"  Name="c" Click="c_Click"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="100" Background="Gray"/>
+        <Button Grid.Row="2" Grid.Column="2" Name="ec" Click="ec_Click" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Height="100" Background="Gray"/>
+        <Button Grid.Row="3" Grid.Column="0"  Name="sw" Click="sw_Click" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Height="100" Background="Gray"/>
+        <Button Grid.Row="3" Grid.Column="1"  Name="s" Click="s_Click"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="100" Height="100" Background="Gray"/>
+        <Button Grid.Row="3" Grid.Column="2" Name="se" Click="se_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="100" Background="Gray" />
+        <TextBlock Grid.Row="2" Grid.Column="1" Name="gameover" Text="GAME OVER!" HorizontalAlignment="Center" Visibility="Collapsed"/>
+        <Button Grid.Column="1" Grid.Row="2" Content="Start" Click="Start_Click" Name="Start" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Button Grid.Column="1" Grid.Row="2" Content="Back" Click="Back_Click" Name="Back" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+        <Button Grid.Column="1" Grid.Row="2" Content="Play Again" Click="PlayAgain_Click" Name="PlayAgain" HorizontalAlignment="Center" VerticalAlignment="Center"  Visibility="Collapsed" />
+        <Button Grid.Column="1" Grid.Row="2" Content="Home" Click="Home_Click" Name="Home" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Visibility="Collapsed" />
+    </Grid>
+
+</Page>

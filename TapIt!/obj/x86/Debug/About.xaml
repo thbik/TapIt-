@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="TapIt_.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TapIt_"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Frame x:ConnectionId='1' Name="About_Frame">
+        <StackPanel Background="#FF00394F">
+            <TextBlock x:ConnectionId='2' HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,30,0,0" FontSize="15" Height="375" Width="259"                                              >
+        		<Run Text="''TapIt!''  gives you the best way to test"/>
+        		<LineBreak/>
+                <Run Text="your reflexes and vigilance!As the game"/>
+        		<LineBreak/>
+                <Run Text="begins, one of the nine gray tiles"/>
+        		<LineBreak/>
+                <Run Text="becomes orange for a short period of "/>
+        		<LineBreak/>
+        		<Run Text="time.By the time this tile stays orange,"/>
+        		<LineBreak/>
+        		<Run Text="player must press it as many times as"/>
+        		<LineBreak/>
+                <Run Text="possible. However, if the tile turns gray"/>
+        		<LineBreak/>
+                <Run Text=" again and the player presses it,he/she "/>
+        		<LineBreak/>
+        		<Run Text="looses one life.The player must adapt"/>
+        		<LineBreak/>
+        		<Run Text="himself/herself  on the fast changes"/>
+        		<LineBreak/>
+        		<Run Text="of the tiles' color.In case the player "/>
+        		<LineBreak/>
+                <Run Text="remains inactive for a number of turns,"/>
+        		<LineBreak/>
+                <Run Text="he/she also looses one life."/>
+                <LineBreak/>
+                <Run Text="Be careful!As your score becomes higher,"/>
+                <LineBreak/>
+                <Run Text="the time in which a tile stays orange"/>
+                <LineBreak/>
+                <Run Text="is decreased!"/>
+                <LineBreak/>
+                <Run Text="The game is over when the player runs"/>
+                <LineBreak/>
+                <Run Text="out of lives."/>
+            </TextBlock>
+            <Button x:ConnectionId='3' x:Name="back"                    HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Back"/>
+
+        </StackPanel>
+    </Frame>
+</Page>
+

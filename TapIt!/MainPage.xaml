@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="TapIt_.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TapIt_"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Frame Name="MyFrame">
+        <StackPanel Background="#FF00394F" >
+
+            <TextBlock Text="TapIt!" HorizontalAlignment="Center" VerticalAlignment="Center"  FontFamily="Impact" FontSize="93.333" Foreground="#FFAB1A25"    ></TextBlock>
+            <Button x:Name="Play" Click="Play_Click" Content="Play!" HorizontalAlignment="Center" VerticalAlignment="Center"  Width="190" Height="50" RenderTransformOrigin="0.504,0.587" Background="#FF003440" FontSize="26.667" Foreground="#FFAB1A25" />
+            <Button x:Name="About" Click="About_Click" Content="About" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,100,0,0" Width="190" Height="50"  FontSize="26.667" Foreground="#FFAB1A25" />
+            <Button x:Name="Exit" Click="Exit_Click" Content="Exit" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0" Width="190" Height="50"  FontSize="26.667" Foreground="#FFAB1A25" />
+
+        </StackPanel>
+
+    </Frame>
+</Page>
